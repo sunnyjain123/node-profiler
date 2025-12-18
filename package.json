@@ -1,0 +1,24 @@
+{
+  "name": "node-profiler",
+  "version": "1.0.0",
+  "description": "A production-friendly Node.js profiler to measure **CPU time**, **memory usage**, **execution duration**, and **concurrency** for functions and HTTP APIs.",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "nodejs",
+    "profiler",
+    "performance",
+    "observability",
+    "express"
+  ],
+  "author": "Sunny Jain",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
