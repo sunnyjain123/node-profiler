@@ -1,4 +1,3 @@
-// src/core/aggregator.js
 const store = new Map();
 
 /**

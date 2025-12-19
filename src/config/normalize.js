@@ -24,6 +24,21 @@ function normalizeConfig(userConfig = {}) {
             ? config.sampleRate
             : defaults.sampleRate;
 
+    config.onResult =
+        typeof config.onResult === "function"
+            ? config.onResult
+            : defaults.onResult;
+
+    config.onError =
+        typeof config.onError === "function"
+            ? config.onError
+            : defaults.onError;
+
+    config.onFlush =
+        typeof config.onFlush === "function"
+            ? config.onFlush
+            : defaults.onFlush;
+
     return config;
 }
 

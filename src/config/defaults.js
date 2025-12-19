@@ -10,5 +10,6 @@ module.exports = {
     debug: false,
     onResult: null,
     onError: null,
+    onFlush: null,
     flushIntervalMs: null
 };
