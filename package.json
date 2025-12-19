@@ -1,6 +1,6 @@
 {
   "name": "node-lite-profiler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A production-friendly Node.js profiler to measure **CPU time**, **memory usage**, **execution duration**, and **concurrency** for functions and HTTP APIs.",
   "main": "src/index.js",
   "exports": {
