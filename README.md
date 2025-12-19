@@ -7,7 +7,15 @@ A lightweight Node.js profiler to track CPU, memory, and response time for funct
 ## Installation
 
 ```bash
-npm install node-profiler
+npm install node-lite-profiler
+```
+
+---
+
+## Upgrade
+
+```bash
+npm install node-lite-profiler@latest
 ```
 
 ---
@@ -15,7 +23,7 @@ npm install node-profiler
 ## Quick Start
 
 ```js
-const { createProfiler, wrapFunction } = require('node-profiler');
+const { createProfiler, wrapFunction } = require('node-lite-profiler');
 
 const profiler = createProfiler({
   enabled: true,
@@ -49,7 +57,7 @@ const profiledFetchUser = wrapFunction(profiler, 'fetchUser', fetchUser);
 
 ```js
 const express = require('express');
-const { expressMiddleware } = require('node-profiler');
+const { expressMiddleware } = require('node-lite-profiler');
 
 const app = express();
 

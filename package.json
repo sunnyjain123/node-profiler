@@ -1,5 +1,5 @@
 {
-  "name": "node-profiler",
+  "name": "node-lite-profiler",
   "version": "1.0.0",
   "description": "A production-friendly Node.js profiler to measure **CPU time**, **memory usage**, **execution duration**, and **concurrency** for functions and HTTP APIs.",
   "main": "src/index.js",
@@ -20,5 +20,21 @@
   "license": "MIT",
   "engines": {
     "node": ">=16"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnyjain123/node-profiler.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sunnyjain123/node-profiler/issues"
+  },
+  "homepage": "https://github.com/sunnyjain123/node-profiler#readme"
 }
