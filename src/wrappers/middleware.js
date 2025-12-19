@@ -13,9 +13,17 @@ function expressMiddleware(profiler, options = {}) {
             routeName,
             () =>
                 new Promise((resolve) => {
-                    res.on("finish", resolve);
-                    res.on("close", resolve);
-                    res.on("error", resolve);
+                    let done = false;
+                    const finish = () => {
+                        if (done) return;
+                        done = true;
+                        resolve();
+                    };
+
+                    res.on("finish", finish);
+                    res.on("close", finish);
+                    res.on("error", finish);
+
                     next();
                 }),
             { type: "http" }
